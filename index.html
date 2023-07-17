@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="spotify-widget">
+        <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/playlist/4O02A5xkBXK4ikf0kvIl9h?utm_source=generator"
+          width="350"
+          height="500"
+          frameborder="0"
+          allowfullscreen="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="card">
+        <div class="profile">
+          <img
+            src="https://cdn.discordapp.com/attachments/1039776131198488588/1130544181115375747/123123.jpeg"
+            alt="Profile Picture"
+          />
+        </div>
+        <div class="profile-info">
+          <h1>Blackitten</h1>
+        </div>
+        <hr class="divider" />
+        <div class="additional-content">
+          <p>
+            Halo selamat datang!!<br />entah dari mana kamu bisa sampai
+            kesini<br />tapi... salam kenal yaa
+          </p>
+          <br />
+          <p>
+            <span>
+              <img
+                src="https://cdn.discordapp.com/attachments/1039776131198488588/1130556733350232104/Ranked_Tier6_Master.png"
+                alt="Apex Rank"
+                width="20"
+                height="20"
+              />
+              Master Ranked Apex Legends Season 17
+            </span>
+            <br />
+            <span>
+              <img
+                src="https://cdn.discordapp.com/attachments/1039776131198488588/1130557696937050123/480px-University_hat_icon.svg.png"
+                alt="Studied"
+                width="20"
+                height="20"
+              />
+              Studied at Universitas Komputer Indonesia
+            </span>
+            <br />
+            <span>
+              <img
+                src="https://cdn.discordapp.com/attachments/1039776131198488588/1130558021727170681/Muffin_logo.png"
+                alt="Owner"
+                width="20"
+                height="20"
+              />
+              Owner of MUFFIN Discord Server
+              <br />
+              <span>
+                <img
+                  src="https://cdn.discordapp.com/attachments/1039776131198488588/1130559049855942666/1174215797dec302c416c52eaac5fc46.png"
+                  alt="Currently"
+                  width="15"
+                  height="15"
+                />
+                Currently Learning Programming Languages
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div id="discord-widget"></div>
+
+      <script>
+        fetch("https://discord.com/api/guilds/768470569338404885/widget.json")
+          .then((response) => response.json())
+          .then((data) => {
+            const widget = document.getElementById("discord-widget");
+            widget.innerHTML = `<iframe src="https://discord.com/widget?id=${data.id}&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>`;
+          })
+          .catch((error) => {
+            console.error("Failed to fetch Discord widget data:", error);
+          });
+      </script>
+      <div class="social-media">
+        <a href="https://www.facebook.com/YogaFajarFernanda/" target="_blank">
+          <img
+            src="https://media.discordapp.net/attachments/1039776131198488588/1130568136517759016/Facebook_f_logo_2019.svg.png?width=676&height=676"
+            alt="Logo Facebook"
+          />
+        </a>
+        <a href="https://github.com/Blackittenz" target="_blank">
+          <img
+            src="https://cdn.discordapp.com/attachments/1039776131198488588/1130568136765227080/github.png"
+            alt="Logo GitHub"
+          />
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCNdVlhfm_0ejwSi5AhQhdpA"
+          target="_blank"
+        >
+          <img
+            src="https://cdn.discordapp.com/attachments/1039776131198488588/1130568137134330076/youtube-vector-logo-png-9.png"
+            alt="Logo YouTube"
+          />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
