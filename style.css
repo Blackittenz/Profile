@@ -1,0 +1,120 @@
+body {
+  background-image: url("https://media.tenor.com/dShj1HWV0GkAAAAC/testeee.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Warna latar belakang transparan */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.9; /* Tingkat kecerahan */
+  flex: 1 1 400px;
+  margin-right: 20px; /* Jarak antara card dan widget Discord */
+  margin-bottom: 20px; /* Jarak bawah */
+}
+
+.spotify-widget {
+  margin-right: 20px; /* Jarak antara widget Spotify dan card */
+}
+
+.profile {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: left;
+  font-size: 24px;
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.divider {
+  height: 1px;
+  background-color: hsl(0, 0%, 0%); /* Warna garis pemisah */
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.additional-content {
+  margin-top: 10px;
+}
+
+#discord-widget {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center; /* Mengubah posisi menjadi di tengah */
+  flex-wrap: wrap; /* Menambahkan wrap agar logo social media dapat berada di bawah */
+  margin-top: 20px;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: #000;
+  margin-right: 10px; /* Tambahkan margin kanan */
+}
+
+.social-media a:last-child {
+  margin-right: 0; /* Hapus margin kanan untuk elemen terakhir */
+}
+
+p {
+  font-size: 16px;
+  margin: 0;
+}
